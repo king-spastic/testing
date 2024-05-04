@@ -784,7 +784,7 @@ local LastLog = os.time()+3
 local BrokenATMs = 0
 
 local Log = function(Msg)
-	print(os.date("%X").." | kkinglol autofarm - "..Msg)
+	print(os.date("%X").." | kkinglol autofarm - @kkinglol")
 end
 
 local IsDead = function()
