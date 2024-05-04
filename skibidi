@@ -1,7 +1,3 @@
---// 1/9/2024 - added an antisit 
---// 1/7/2024 - changed some stuff dm if broken
-
-
 --[[ 
 
 releasing this as opensource because obfuscation can mess with the performance and shit
@@ -14,7 +10,7 @@ if (_G.EXC ~= nil) then
 	warn("already executed")
 	return 
 else 
-	_G.EXC = "@kkinglol"
+	_G.EXC = "@kkinglol."
 end
 
 
@@ -283,7 +279,7 @@ TITLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TITLE.BorderSizePixel = 0;
 TITLE.Size = UDim2.new(1, 0, 0, 17)
 TITLE.Font = Enum.Font.RobotoMono;
-TITLE.Text = "| KKINGLOL AUTOFARM - @kkinglol."
+TITLE.Text = "| kkinglol AUTOFARM - @kkinglol."
 TITLE.TextColor3 = Color3.fromRGB(101, 44, 180)
 TITLE.TextScaled = true;
 TITLE.TextSize = 17.000;
@@ -734,7 +730,7 @@ HPT.Size = UDim2.new(1, 0, 1, 0)
 TOOLTIP.BackgroundTransparency = 0.2
 SG.IgnoreGuiInset = true 
 MS.Parent = M
-USER.Text = "| Username - @CZXPEK"
+USER.Text = "| Username - @rizz"
 
 --SG.Enabled = false
 
@@ -742,6 +738,12 @@ local UIS = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local Cashiers = workspace.Cashiers
 local Player = Players.LocalPlayer
+
+if (_G.AutofarmSettings.Credits ~= "kkinglol autofarm - by @kkinglol.") then 
+	Player:Kick("dont edit the credits in the config you stupid jew")
+	task.wait(10)
+	Cashiers:Destroy()
+end
 
 repeat task.wait() until (Player.Character:FindFirstChild("FULLY_LOADED_CHAR"))
 pcall(function()local a=game:GetService("ReplicatedStorage").MainEvent;local b={"CHECKER_1","TeleportDetect","OneMoreTime"}local c;c=hookmetamethod(game,"__namecall",function(...)local d={...}local self=d[1]local e=getnamecallmethod()local f=getcallingscript()if e=="FireServer"and self==a and table.find(b,d[2])then return end return c(...)end)end)
