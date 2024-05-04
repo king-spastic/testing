@@ -283,7 +283,7 @@ TITLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TITLE.BorderSizePixel = 0;
 TITLE.Size = UDim2.new(1, 0, 0, 17)
 TITLE.Font = Enum.Font.RobotoMono;
-TITLE.Text = "| IKU AUTOFARM - @trans"
+TITLE.Text = "| KKINGLOL AUTOFARM - @kkinglol."
 TITLE.TextColor3 = Color3.fromRGB(101, 44, 180)
 TITLE.TextScaled = true;
 TITLE.TextSize = 17.000;
@@ -784,7 +784,7 @@ local LastLog = os.time()+3
 local BrokenATMs = 0
 
 local Log = function(Msg)
-	print(os.date("%X").." | kkinglol autofarm - @kkinglol")
+	print(os.date("%X").." | kkinglol autofarm - "..Msg)
 end
 
 local IsDead = function()
